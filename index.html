@@ -1,175 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>PC's Class 11 Physics PYQs</title>
+<meta charset="UTF-8">
+<title>PC's World | Physics PYQs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Handwritten Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    text-align: center;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Caveat', cursive;
-      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      min-height: 100vh;
-    }
+.container {
+    padding: 80px 20px;
+}
 
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 90px auto;
-      padding: 60px;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 20px;
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
-      text-align: center;
-      animation: fadeIn 1.2s ease;
-    }
+p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.btn {
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: #00e5ff;
+    color: #003344;
+}
 
-    h1 {
-      font-size: 48px;
-      color: #0f2027;
-      margin-bottom: 30px;
-      letter-spacing: 1.5px;
-    }
+.btn:hover {
+    background: #1de9b6;
+}
 
-    .btn {
-      margin-top: 35px;
-      padding: 16px 60px;
-      font-size: 28px;
-      border-radius: 50px;
-      border: none;
-      background: linear-gradient(to right, #0f2027, #2c5364);
-      color: white;
-      cursor: pointer;
-      transition: 0.35s;
-    }
+.chapters {
+    display: none;
+    margin-top: 50px;
+}
 
-    .btn:hover {
-      transform: scale(1.08);
-      box-shadow: 0 15px 35px rgba(15, 32, 39, 0.6);
-    }
+.chapter-btn {
+    display: block;
+    margin: 12px auto;
+    width: 320px;
+    padding: 14px;
+    border-radius: 25px;
+    background: white;
+    color: #003344;
+    text-decoration: none;
+    font-size: 1rem;
+}
 
-    .chapter-btn {
-      display: block;
-      margin: 24px auto;
-      padding: 20px;
-      width: 75%;
-      font-size: 28px;
-      border-radius: 16px;
-      border: none;
-      background: linear-gradient(to right, #f8fafc, #eef2f3);
-      color: #0f2027;
-      text-decoration: none;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-      transition: 0.35s;
-    }
+.chapter-btn:hover {
+    background: #e0f7fa;
+}
 
-    .chapter-btn:hover {
-      transform: translateY(-6px) scale(1.03);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.25);
-    }
-
-    footer {
-      margin-top: 55px;
-      font-size: 18px;
-      color: #444;
-    }
-  </style>
+footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
+    <h1>🌟 Welcome to PC's World 🌟</h1>
+    <p>📘 Class 11 Physics – PYQs (Handwritten PDFs)</p>
 
-    <!-- SCREEN 1 -->
-    <div id="screen1">
-      <h1>✨ WELCOME TO PC'S WORLD ✨</h1>
-      <button class="btn" onclick="goNext()">NEXT ➡️</button>
+    <button class="btn" onclick="showChapters()">Next ➡️</button>
+
+    <div class="chapters" id="chapters">
+        <h2>📚 Chapters</h2>
+
+        <!-- PDFs OPEN IN APP + WEB -->
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Units_and_Dimensions.pdf" target="_blank">
+            📐 Units & Dimensions
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Vectors.pdf" target="_blank">
+            ➡️ Vectors
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Motion_in_1D.pdf" target="_blank">
+            🏃 Motion in 1D
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Motion_in_2D.pdf" target="_blank">
+            🏃‍♂️ Motion in 2D
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Laws_of_Motion.pdf" target="_blank">
+            ⚖️ Laws of Motion
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Work_Energy_Power.pdf" target="_blank">
+            🔋 Work, Energy & Power
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Mechanical_Properties_of_Solids.pdf" target="_blank">
+            🧱 Mechanical Properties of Solids
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Mechanical_Properties_of_Fluids.pdf" target="_blank">
+            💧 Mechanical Properties of Fluids
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Kinetic_Theory_of_Gases.pdf" target="_blank">
+            🌬️ Kinetic Theory of Gases
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Thermodynamics.pdf" target="_blank">
+            🔥 Thermodynamics
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/SHM.pdf" target="_blank">
+            🎵 Simple Harmonic Motion
+        </a>
+
+        <a class="chapter-btn" href="https://docs.google.com/gview?embedded=true&url=https://piyushiitan-beep.github.io/physics-pyqs/pdfs/Waves.pdf" target="_blank">
+            🌊 Waves
+        </a>
+
     </div>
 
-    <!-- SCREEN 2 -->
-    <div id="screen2" style="display:none;">
-      <h1>📗 Class 11 Physics PYQs</h1>
+    <footer>
+        Designed & Developed by <b>Piyush</b> 💙
+    </footer>
+</div>
 
-      <a href="pdfs/Units_and_Dimensions.pdf" class="chapter-btn" target="_blank">
-        📐 Units & Dimensions
-      </a>
-
-      <a href="pdfs/Vectors.pdf" class="chapter-btn" target="_blank">
-        ➡️ Vectors
-      </a>
-
-      <a href="pdfs/Motion_in_1D.pdf" class="chapter-btn" target="_blank">
-        🏃 Motion in 1D
-      </a>
-
-      <a href="pdfs/Motion_in_2D.pdf" class="chapter-btn" target="_blank">
-        🧭 Motion in 2D
-      </a>
-
-      <a href="pdfs/Laws_of_Motion.pdf" class="chapter-btn" target="_blank">
-        🧲 Laws of Motion
-      </a>
-
-      <a href="pdfs/Work_Energy_Power.pdf" class="chapter-btn" target="_blank">
-        ⚙️ Work, Energy & Power
-      </a>
-
-      <a href="pdfs/Centre_of_Mass.pdf" class="chapter-btn" target="_blank">
-        ⚖️ Centre of Mass & Collisions
-      </a>
-
-      <a href="pdfs/Mechanical_Properties_of_Solids.pdf" class="chapter-btn" target="_blank">
-        🧱 Mechanical Properties of Solids
-      </a>
-
-      <a href="pdfs/Mechanical_Properties_of_Fluids.pdf" class="chapter-btn" target="_blank">
-        💧 Mechanical Properties of Fluids
-      </a>
-
-      <a href="pdfs/Kinetic_Theory_of_Gases.pdf" class="chapter-btn" target="_blank">
-        🌫️ Kinetic Theory of Gases
-      </a>
-
-      <a href="pdfs/Thermodynamics.pdf" class="chapter-btn" target="_blank">
-        🔥 Thermodynamics
-      </a>
-
-      <a href="pdfs/Simple_Harmonic_Motion.pdf" class="chapter-btn" target="_blank">
-        ⏱️ Simple Harmonic Motion
-      </a>
-
-      <a href="pdfs/Oscillations_and_Waves.pdf" class="chapter-btn" target="_blank">
-        🌊 Waves
-      </a>
-
-      <footer>
-        💻 Designed and Developed by <b>Piyush</b>
-      </footer>
-    </div>
-
-  </div>
-
-  <script>
-    function goNext() {
-      document.getElementById("screen1").style.display = "none";
-      document.getElementById("screen2").style.display = "block";
-    }
-  </script>
+<script>
+function showChapters() {
+    document.getElementById("chapters").style.display = "block";
+}
+</script>
 
 </body>
 </html>
+
 
